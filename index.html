@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yesh - Premium Video Editor</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 30px;
+      background: linear-gradient(135deg, #1f1c2c, #928dab);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+      animation: fadeInDown 1s ease-out;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #ddd;
+    }
+
+    .sliders {
+      padding: 40px 20px;
+    }
+
+    .slider {
+      margin-bottom: 60px;
+      animation: fadeInUp 1s ease-in;
+    }
+
+    .slider h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #ffd700;
+      text-shadow: 1px 1px 3px #000;
+    }
+
+    .video-slider {
+      display: flex;
+      overflow-x: auto;
+      gap: 20px;
+      scroll-snap-type: x mandatory;
+      padding-bottom: 10px;
+    }
+
+    .video-item {
+      flex: 0 0 300px;
+      scroll-snap-align: center;
+      background: #1b1b2f;
+      border-radius: 15px;
+      padding: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+    }
+
+    .video-item:hover {
+      transform: scale(1.05);
+    }
+
+    video {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .whatsapp-btn {
+      display: block;
+      margin-top: 10px;
+      padding: 10px;
+      text-align: center;
+      background-color: #25D366;
+      color: white;
+      font-weight: bold;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .whatsapp-btn:hover {
+      background-color: #128C7E;
+    }
+
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 30px 20px;
+      color: #ccc;
+      animation: fadeInUp 1.5s ease-in;
+    }
+
+    footer h2 {
+      margin-bottom: 10px;
+    }
+
+    footer a {
+      color: #25D366;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Animations */
+    @keyframes fadeInDown {
+      0% { opacity: 0; transform: translateY(-30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🎬 Yesh - Premium Video Editor</h1>
+    <p>Experience Professional Editing Like Never Before</p>
+  </header>
+
+  <section class="sliders">
+    <!-- Slider 1 -->
+    <div class="slider">
+      <h2>🔥 Featured Work</h2>
+      <div class="video-slider">
+        <div class="video-item">
+          <video src="VIDEO_LINK_1" autoplay muted loop></video>
+          <a href="https://wa.me/919630419167?text=Hi%20Yesh%2C%20I%20saw%20your%20video%20%E2%80%93%20I%20want%20to%20connect!" target="_blank" class="whatsapp-btn">Contact on WhatsApp</a>
+        </div>
+        <div class="video-item">
+          <video src="VIDEO_LINK_2" autoplay muted loop></video>
+          <a href="https://wa.me/919630419167?text=Hi%20Yesh%2C%20I%20saw%20your%20video%20%E2%80%93%20I%20want%20to%20connect!" target="_blank" class="whatsapp-btn">Contact on WhatsApp</a>
+        </div>
+        <div class="video-item">
+          <video src="VIDEO_LINK_3" autoplay muted loop></video>
+          <a href="https://wa.me/919630419167?text=Hi%20Yesh%2C%20I%20saw%20your%20video%20%E2%80%93%20I%20want%20to%20connect!" target="_blank" class="whatsapp-btn">Contact on WhatsApp</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slider 2 -->
+    <div class="slider">
+      <h2>🎞️ Short Film Edits</h2>
+      <div class="video-slider">
+        <div class="video-item">
+          <video src="VIDEO_LINK_4" autoplay muted loop></video>
+          <a href="https://wa.me/919630419167?text=Hi%20Yesh%2C%20I%20saw%20your%20video%20%E2%80%93%20I%20want%20to%20connect!" target="_blank" class="whatsapp-btn">Contact on WhatsApp</a>
+        </div>
+        <div class="video-item">
+          <video src="VIDEO_LINK_5" autoplay muted loop></video>
+          <a href="https://wa.me/919630419167?text=Hi%20Yesh%2C%20I%20saw%20your%20video%20%E2%80%93%20I%20want%20to%20connect!" target="_blank" class="whatsapp-btn">Contact on WhatsApp</a>
+        </div>
+        <div class="video-item">
+          <video src="VIDEO_LINK_6" autoplay muted loop></video>
+          <a href="https://wa.me/919630419167?text=Hi%20Yesh%2C%20I%20saw%20your%20video%20%E2%80%93%20I%20want%20to%20connect!" target="_blank" class="whatsapp-btn">Contact on WhatsApp</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slider 3 -->
+    <div class="slider">
+      <h2>📱 Social Media Reels</h2>
+      <div class="video-slider">
+        <div class="video-item">
+          <video src="VIDEO_LINK_7" autoplay muted loop></video>
+          <a href="https://wa.me/919630419167?text=Hi%20Yesh%2C%20I%20saw%20your%20video%20%E2%80%93%20I%20want%20to%20connect!" target="_blank" class="whatsapp-btn">Contact on WhatsApp</a>
+        </div>
+        <div class="video-item">
+          <video src="VIDEO_LINK_8" autoplay muted loop></video>
+          <a href="https://wa.me/919630419167?text=Hi%20Yesh%2C%20I%20saw%20your%20video%20%E2%80%93%20I%20want%20to%20connect!" target="_blank" class="whatsapp-btn">Contact on WhatsApp</a>
+        </div>
+        <div class="video-item">
+          <video src="VIDEO_LINK_9" autoplay muted loop></video>
+          <a href="https://wa.me/919630419167?text=Hi%20Yesh%2C%20I%20saw%20your%20video%20%E2%80%93%20I%20want%20to%20connect!" target="_blank" class="whatsapp-btn">Contact on WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <h2>📞 Contact</h2>
+    <p>Email: <a href="mailto:yesh.editor@gmail.com">yesh.editor@gmail.com</a></p>
+    <p>WhatsApp: <a href="https://wa.me/919630419167">+91 9630419167</a></p>
+  </footer>
+</body>
+</html>
